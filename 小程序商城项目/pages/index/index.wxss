@@ -1,0 +1,76 @@
+/**index.wxss**/
+page{
+  background: #eee;
+}
+.search{
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+ 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ padding: 20rpx 0;
+}
+.bag{
+  background:rgb(118, 191, 233);
+}
+.search image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.search .vie { 
+  display: flex;
+  align-items: center;
+  border-radius: 50rpx;
+  background: rgba(252, 250, 250,.8);
+  width: 500rpx;
+  height: 65rpx;
+  opacity: .7;
+}
+.search .vie text{
+  opacity: .6;
+}
+.search icon{
+margin-left: 30rpx;
+margin-right: 10rpx;
+} 
+swiper{
+  height: 450rpx;
+}
+.img{
+  width: 100%;
+  height: 100%;
+}
+.search button{
+  width: 100rpx;
+  height: 68rpx;
+  padding: 0px;
+display: flex;
+justify-content: center;
+align-items: center;
+  margin: 0;
+  font-size: 14px;
+  border: none;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  margin: 30rpx 0;
+  padding:20rpx 40rpx; 
+  background: #fff;
+}
+.nav view{
+  display: flex;
+  flex-direction: column;
+}
+.nav image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.cs{
+  position: absolute;
+  z-index: 200;
+}

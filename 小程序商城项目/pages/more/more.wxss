@@ -1,0 +1,70 @@
+/* pages/more/more.wxss */
+
+  .price{
+    display: flex;
+    margin:0 10px;
+    justify-content:space-between;
+  }
+  
+  .price text{
+    font-size: 16px;
+    color: #ff5f19;
+  }
+  
+  .price image{
+    width: 20px;
+    height: 20px;
+    padding-top: 2px;
+  }
+  
+  .sort{
+    display: flex;
+    height: 40px;
+    line-height: 40px;
+  }
+  
+  .sort .item{
+    text-align: center;
+    flex: 1 0 33%;
+    font-size: 14px;
+    color:#333;
+    border-top:2px solid #EDEDED;
+    border-bottom:2px solid #EDEDED;
+    display: inline-flex;
+    align-items:center;
+    justify-content:center;
+  }
+  
+  .sort .active{
+    border-bottom:1px solid #000;
+    line-height:38px;
+  }
+  
+  .sort .item-active{
+    transform:rotate(180deg);
+  }
+  
+  .sort .item image {
+    width: 10px;
+    height: 12px;
+    padding-left:5px;
+  }
+  .conter{
+    width: 100%;
+    margin-top: 20rpx;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  v-item{
+    margin-bottom: 90rpx;
+  }
+  .title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-left: 10px;
+  }
+  .top{
+    margin-bottom: 20px;
+  }

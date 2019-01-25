@@ -1,0 +1,14 @@
+<!--component/index/item/index.wxml-->
+<view class="item-top">
+    <image src="{{dataitem.imgUrl[0]}}" class="bg" mode="aspectFill"></image>
+    <view class="item-text">
+        <view class="item-left">
+                <text class="itemtitle">{{dataitem.title}}</text>
+                <view class="shop">
+                    <text>价格:<text class="price">{{dataitem.price}}</text></text>
+                    <image src="/images/shop.png" bindtap="onshop" data-id="{{dataitem.id}}"></image>
+                </view>
+        </view> 
+        <view class="gm" bindtap="ondetails" data-id="{{dataitem.id}}" data-title="{{dataitem.title}}">查看详情</view>
+    </view>
+</view>

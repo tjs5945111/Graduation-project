@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "v-nav":"/component/index/nav/index",
+        "v-maxitem":"/component/index/maxitem/index"
+    },
+    "enablePullDownRefresh":true
+}
