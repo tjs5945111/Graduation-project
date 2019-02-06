@@ -49,9 +49,9 @@ Page({
         imglb
       })
     },'l');
-    allListcModel.getTop(this.handledata,25,"hto","z","正在热销");
-    allListcModel.getTop(this.handledata,28,"soon","j","即将上市");
-    allListcModel.getTop(this.handledata,16,"top","n","年度排行榜");
+    allListcModel.getTop(this.handledata,3,"hto","z","正在热销");
+    allListcModel.getTop(this.handledata,16,"soon","j","即将上市");
+    allListcModel.getTop(this.handledata,28,"top","n","年度排行榜");
   },
   handledata(res,type,ma,maxtitle){
     // console.log(res)

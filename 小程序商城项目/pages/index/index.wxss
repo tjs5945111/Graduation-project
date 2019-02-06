@@ -1,7 +1,7 @@
 /**index.wxss**/
-page{
+/* page{
   background: #eee;
-}
+} */
 .search{
   position: fixed;
   top: 0;
@@ -14,7 +14,7 @@ page{
  padding: 20rpx 0;
 }
 .bag{
-  background:rgb(118, 191, 233);
+  background:#C3DCE8;
 }
 .search image{
   width: 40rpx;

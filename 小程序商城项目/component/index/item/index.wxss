@@ -3,6 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 10rpx;
+    margin-bottom: 10rpx;
 }
 .gm{
     width: 220rpx;
@@ -23,18 +25,18 @@
 }
 .item-top{
     width: 220rpx;
-    height: 280rpx;
+    height: 367rpx;
+    box-shadow: 0px 0px 8px rgb(51, 51, 51);
     overflow: hidden;
-    box-shadow: 0px 0px 15px rgb(51, 51, 51);
 }
 .item-top:hover .item-text{
 transition: all 1s;  
-transform: translateY(-100%); 
+transform: translateY(-70rpx); 
 }
 .item-text{ 
     font-size: 10px;
     z-index:50;
-    background: rgba(245, 239, 239, 0.7);  
+    background: rgba(241, 237, 237, 0.7);  
 }
 .item-left{
     margin: 0 10rpx;
@@ -45,4 +47,5 @@ transform: translateY(-100%);
 .itemtitle{
     font-size: 10px;
     font-weight: bolder;
+  
 }

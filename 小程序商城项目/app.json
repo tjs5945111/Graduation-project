@@ -15,15 +15,14 @@
   "window": {
     "navigationBarBackgroundColor": "#008DDC",
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "手机商城",
-    "backgroundColor": "#63d2e6",
+    "navigationBarTitleText": "手机商城", 
     "backgroundTextStyle": "light",
     "enablePullDownRefresh": false
   },
   "tabBar": {
     "color": "#929292",
     "selectedColor": "#ff0000",
-    "borderStyle": "white",
+    "borderStyle": "black",
     "backgroundColor": "#fff",
     "list": [
       {

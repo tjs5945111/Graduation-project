@@ -9,7 +9,8 @@ class HTTP {
     success
   }) {
     wx.request({
-      url: 'http://192.168.22.17:8080/market'+url,
+      url: 'http://localhost:8080/market'+url,
+      // url: 'http://192.168.22.17:8080/market'+url,
       data,
       method, // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
       header: {

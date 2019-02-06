@@ -2,7 +2,7 @@
 .content{
 padding: 0 10rpx;
 margin:40rpx 0;
-background: #fff;
+
 overflow: hidden;
 }
 .item-conter{
@@ -13,5 +13,10 @@ overflow: hidden;
 .item-top{
     display: flex;
     justify-content: space-between;
-    margin: 40rpx 20rpx;
+    padding: 40rpx 20rpx;
+   
+}
+.content-div{
+    background: #eee;
+    margin-bottom: 30rpx;
 }
