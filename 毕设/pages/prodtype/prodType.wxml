@@ -1,0 +1,24 @@
+<!--pages/prodtype/prodType.wxml-->
+<view class="vie" bindtap="onsearch"><icon type="search" size="20" color=""></icon><text>苹果、小米</text></view>
+<view class="conter">
+        <scroll-view scroll-y class="scrollleft">
+                <view bindtap="onrearch" data-type="p" data-id="0" class='{{sortActive==0?"active":""}}'>苹果</view><view bindtap="onrearch" data-type="h" data-id="1" class='{{sortActive==1?"active":""}}'>华为</view>
+                <view bindtap="onrearch" data-type="x" data-id="2" class='{{sortActive==2?"active":""}}'>小米</view><view bindtap="onrearch" data-type="v" data-id="3" class='{{sortActive==3?"active":""}}'>vivo</view>        
+                <view bindtap="onrearch" data-type="o" data-id="4" class='{{sortActive==4?"active":""}}'>oppo</view><view bindtap="onrearch" data-type="p" data-id="5" class='{{sortActive==5?"active":""}}'>苹果</view>        
+                <view bindtap="onrearch" data-type="h" data-id="6" class='{{sortActive==6?"active":""}}'>华为</view><view bindtap="onrearch" data-type="x" data-id="7" class='{{sortActive==7?"active":""}}'>小米</view>        
+                <view bindtap="onrearch" data-type="v" data-id="8" class='{{sortActive==8?"active":""}}'>vivo</view><view bindtap="onrearch" data-type="o" data-id="9" class='{{sortActive==9?"active":""}}'>oppo</view>        
+                <view bindtap="onrearch" data-type="p" data-id="10" class='{{sortActive==10?"active":""}}'>苹果</view><view bindtap="onrearch" data-type="h" data-id="11" class='{{sortActive==11?"active":""}}'>华为</view>        
+            </scroll-view>
+            <scroll-view scroll-y class="scrollright">
+                <view class="item">  
+                        <view class="lin"></view>
+                        <view class="conters">
+                            <block wx:for="{{phone}}" wx:key="index">
+                                <v-item dataitem="{{item}}"></v-item>
+                            </block>
+                         </view>
+                       
+                    </view>
+            </scroll-view>     
+</view>
+

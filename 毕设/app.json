@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/details/details",
+    "pages/order/index",
+    "pages/coupon/index",
+    "pages/addressList/index",
+    "pages/addressAdd/index",
+    "pages/more/more",
+    "pages/search/search",
+    "pages/prodtype/prodType",
+    "pages/cart/cart",
+    "pages/ucenter/ucenter"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#008DDC",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "手机商城", 
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#929292",
+    "selectedColor": "#ff0000",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "selectedIconPath": "images/11.png",
+        "iconPath": "images/10.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/21.png",
+        "iconPath": "images/20.png",
+        "pagePath": "pages/prodtype/prodType",
+        "text": "分类"
+      },
+      {
+        "selectedIconPath": "images/41.png",
+        "iconPath": "images/40.png",
+        "pagePath": "pages/cart/cart",
+        "text": "购物车"
+      },
+      {
+        "selectedIconPath": "images/51.png",
+        "iconPath": "images/50.png",
+        "pagePath": "pages/ucenter/ucenter",
+        "text": "我的"
+      }
+    ]
+  }
+}

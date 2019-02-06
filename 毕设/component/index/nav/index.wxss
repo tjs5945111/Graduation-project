@@ -1,0 +1,4 @@
+/* component/index/nav/index.wxss */
+.app{
+    margin-top: 15rpx;
+}

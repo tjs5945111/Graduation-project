@@ -1,0 +1,14 @@
+<!--component/index/maxitem/index.wxml-->
+<view class="content">
+    <view class="content-div">
+            <view class="item-top">
+                    <text>{{datamaxitem.maxtitle}}</text>
+                    <text bindtap="onmore" data-title="{{datamaxitem.maxtitle}}" data-ti="{{datamaxitem.ma}}">更多></text>
+                </view>
+    </view>
+        <view class="item-conter">
+            <block wx:for="{{datamaxitem.phone}}" wx:key="index">
+                <v-item dataitem="{{item}}"></v-item>
+            </block>
+        </view>
+    </view>

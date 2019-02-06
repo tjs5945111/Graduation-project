@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "分类信息",
+    "usingComponents": {
+    "v-item":"/component/index/item/index"
+  }
+}

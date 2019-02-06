@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="search {{isScroll?'bag':''}}">
+  <image src="/images/prodtype.png" bindtap="ontap"></image>
+  <view class="vie" bindtap="onsearch"><icon type="search" size="20" color=""></icon><text>苹果、小米</text></view>
+  <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" plain="{{true}}">授 权</button>
+</view>
+
+<swiper indicator-dots="{{true}}" autoplay="{{true}}"current="0" interval="5000" duration="1000" bindchange="">
+    <block wx:for="{{imglb}}" wx:key="index">
+        <swiper-item>
+            <image src="{{item}}" class="img"></image>
+        </swiper-item> 
+       </block>
+</swiper>
+<view class="nav">
+    <block wx:for="{{img}}" wx:key="index">
+  <v-nav imgUrl="{{item.imgurl}}" imgTitle="{{item.title}}" imgTi="{{item.ti}}"></v-nav>
+  </block>
+</view>
+
+<v-maxitem datamaxitem="{{hto}}"></v-maxitem>
+<v-maxitem datamaxitem="{{soon}}"></v-maxitem>
+<v-maxitem datamaxitem="{{top}}"></v-maxitem>

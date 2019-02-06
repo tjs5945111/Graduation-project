@@ -1,0 +1,99 @@
+<!--pages/details/details.wxml-->
+<view class="box"bindtouchstart="touchstart"bindtouchmove="touchmove"bindtouchend="touchend">
+    <view animation="{{animation1}}"bindtap="scrollLeft">
+    <image src="{{clubs[0]}}"class="img"style="width:{{img_width_one}}rpx"mode='aspectFill'/>
+    </view>
+    <view animation="{{animation2}}"bindtap="scrollLeft">
+    <image src="{{clubs[1]}}"class="img2"/>
+    </view>
+    <view animation="{{animation3}}">
+    <image src="{{clubs[2]}}"class="img3"style="width:{{img_width_three}}rpx"mode='aspectFill'/>
+    </view>
+    </view>
+
+    <view style='height:80vh;'>
+        <scroll-view scroll-y style='height:70vh'>
+          <view class='titletop'>
+            <view>{{phone[0].title}}</view>
+            <view class='spec'>
+            {{phone[0].style[0]}}
+            </view>
+          </view>
+          <view class='price'>
+          <text>￥</text>
+          {{phone[0].price}}
+          </view>
+          <view class='freight'>
+            <view class='left'>
+            运费:免运费
+            </view>
+            <view class='right'>
+            销量： {{phone[0].count}}
+            </view>
+           </view> 
+          
+           <view class='tab'>
+            <view class='left' bindtap="tabFun" data-state="{{1}}">
+              <text class='{{tabIs?"tab-acitve":""}}'>产品详情</text>
+            </view>
+            <view class='right' bindtap="tabFun" data-state="{{2}}">
+              <text class='{{!tabIs?"tab-acitve":""}}'>售后保障</text>
+            </view>
+           </view>
+           <view class='content' wx:if="{{tabIs}}">
+              {{phone[0].details}}
+            </view>
+           <view class='content' wx:if="{{!tabIs}}">
+              {{phone[0].service}}
+           </view>
+        </scroll-view>
+        <view class='bottom'>
+        <view class='icon' bindtap='goShopCar'>
+            <image src='/images/shopping_cart_return.png' style='width:20px;height:17px;'></image>
+            <text>购物车</text>
+        </view>
+
+        <view class='btn' bindtap='addCart' data-id="{{phone[0].id}}">
+          加入购物车
+        </view>
+        <view class='btn' style='background: #FE4543;' bindtap='specFun'>
+          立即购买
+        </view>
+        </view>
+        <view class='popup' wx:if="{{specIs}}">
+            <view class='title'>
+              <view class='img'>
+                <image src="{{phone[0].url[0]}}"></image>
+              </view>
+              <view class='text'>
+                <text>热卖款： {{phone[0].title}}</text>
+                <view>￥ {{phone[0].price}}</view>
+              </view>
+              <view class='icon' bindtap='specFun'>
+                <image src="/images/delete.png"></image>
+              </view>
+            </view>
+          <scroll-view scroll-y class='content'>
+              <view class='item'>
+                <text style='padding-top:10px;'>颜色:</text>
+                <view class='list'>
+                    <block wx:for="{{phone[0].color}}" wx:key="index">
+                         <view class='active'>{{item}}</view>
+                    </block>
+                </view>
+              </view>
+              <view class='item'>
+                <text>内存大小:</text>
+                <view class='list'>
+                    <block wx:for="{{phone[0].style}}" wx:key="index">
+                        <view class='active'>{{item}}</view>
+                   </block>
+                </view>
+              </view>
+          </scroll-view>
+          <view class='btn' bindtap='specFun'>
+          下一步
+          </view>
+        </view>
+        </view>
+    

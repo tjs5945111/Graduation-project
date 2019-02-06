@@ -1,0 +1,23 @@
+<!--pages/search/search.wxml-->
+<form bindsubmit="onForm" class="section">         
+            <input placeholder="苹果、小米" confirm-type="search" bindconfirm="onConfirm" focus="true" name="search" bind:focus="onFocus" bind:blur="onBlur" value="{{value}}">
+            <button class="btn" formType="submit" hover-class="none" bindconfirm="onConfirm" plain="{{true}}">
+                <icon type="search" size="20" color=""></icon>
+            </button></input>
+            <icon type="clear" wx:if="{{isShow}}" bindtap="onClick" size="20" class="clears"></icon>
+            <button class="btn2" formType="submit" hover-class="none" bindconfirm="onConfirm">搜 索</button> 
+</form>
+<view class="lin"></view>
+<view class="hot">
+    <view class="hot-s">热门搜索</view>
+    <view class="hotsearch">
+        <view bindtap="onrearch" data-type="p">苹果</view><view bindtap="onrearch" data-type="h">华为</view>
+        <view bindtap="onrearch" data-type="x">小米</view><view bindtap="onrearch" data-type="v">vivo</view>
+    </view>
+</view>
+<view class="lin"></view>
+<view class="conter">
+    <block wx:for="{{phone}}" wx:key="index">
+        <v-item dataitem="{{item}}"></v-item>
+    </block>
+ </view>
