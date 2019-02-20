@@ -1,5 +1,0 @@
-<!--component/index/nav/index.wxml-->
-<view bindtap="onmore"  data-title="{{imgTitle}}"  data-ti="{{imgTi}}" class="top">
-    <image src="{{imgUrl}}"></image>
-    <text class="app">{{imgTitle}}</text>
-</view>
